@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import {store} from './Redux/store';
 import axios from "axios";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-axios.defaults.baseURL="http://localhost:8080/shoes";
+axios.defaults.baseURL="http://localhost:8080";
 axios.defaults.headers.post['Conte-type']="application/json";
 root.render(
   <Provider store={store}>
